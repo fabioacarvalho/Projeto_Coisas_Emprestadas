@@ -138,12 +138,13 @@ a:hover {
     font-family: var(--fonte-titulo);
     font-size: 2rem;
 }
-h3 {
+label {
     color: var(--cor0);
     margin: auto;
     padding: 20px;
     font-family: var(--fonte-padrao);
     font-size: 1rem;
+    font-weight: bold;
 }
 
 
