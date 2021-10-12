@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* ------------------------ IMPORT FONTES ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
+/* 
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kaushan Script', cursive; 
+    font-family: 'Maven Pro', sans-serif;
+*/
+
+
+/* Config Gerais */
+
+/* TELA LOGIN */
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body, ul {
+    margin: 0px;
+    padding: 100px;
+    background-color: rgb(202, 202, 202);
+    background-repeat: repeat;
+
+}
+
+p {
+    color: white;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-family: 'Kaushan Script', cursive; 
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    padding: 20px;
+    margin: auto;
+    min-width: 20   0px;
+    background-color: #263238;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.385);
+}
+
+input {
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+input:hover {
+    background-color: #d3d3d3;
+}
+
+.campos {
+    border: none;
+
+}
+
+#btn-entrar {
+    width: 10vw;
+    margin: auto;
+    min-width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: rgb(221, 221, 221);
+}
+
+#btn-entrar:hover {
+    color: #FFF;
+    background-color: rgb(52, 104, 74);
+}
+
+
+#btn-cadastro {
+    width: 10vw;
+    margin: auto;
+    color: #263238;
+    min-width: 100px;
+    font-size: 15px;
+    background-color: rgb(221, 221, 221);
+}
+
+#container-btn {
+    margin: auto;
+}
+
+#btn-cadastro:hover {
+    color: white;
+    background-color: #dcb843;
+}
+
+@media (max-width: 850px) {
+    body {
+        padding: 10px;
+    }
+    #container  {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    body {
+        background-color: #263238;
+        margin: auto;
+        margin-right: 90px;
+    }
+
+    body, ul {
+        padding: 0px;
+    
+    }
+
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #container {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    #container > p {
+        display: none;
+    }
+
+    #container > h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    input {
+        padding: 0px;
+        min-width: 200px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+}
