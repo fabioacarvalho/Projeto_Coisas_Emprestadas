@@ -10,6 +10,9 @@
     --cor0: #263238;
     --cor1: #FFFFFF;
     --cor2: #d1d1d1;
+    --cor3: #dcff79;
+    --cor4: #cfb9ff;
+    --cor5: #000000;
 
     --fonte-padrao: 'Maven Pro', sans-serif;
     --fonte-titulo: 'Bebas Neue', cursive;
@@ -21,6 +24,7 @@
 
 body {
     font-family: var(--fonte-padrao);
+    background-color: var(--cor5);
 }
 
 body, ul {
@@ -52,7 +56,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     /*background: #3d3d3d; */
     margin-bottom: 10px;
 }
