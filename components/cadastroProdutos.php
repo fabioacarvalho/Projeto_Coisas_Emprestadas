@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-     <?php 
+    <?php 
         $nomeProduto = $_GET["nomeProduto"];
         $categoriaProduto = $_GET["categoriaProduto"];
         $quantidadeProduto = $_GET["qtdeProduto"];
         echo "Temos: $nomeProduto";
-     ?>
+    ?>
 </body>
 </html>

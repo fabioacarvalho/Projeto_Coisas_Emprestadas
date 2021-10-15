@@ -6,12 +6,13 @@
 /* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
 
 :root {
-    --cor0: #263238;
+    --cor0: #fefe00;
     --cor1: #FFFFFF;
     --cor2: #d1d1d1;
-    --cor3: #dcff79;
+    --cor3: #01eefe;
     --cor4: #cfb9ff;
     --cor5: #000000;
+    --cor6: #6035b8;
 
     --fonte-padrao: 'Maven Pro', sans-serif;
     --fonte-titulo: 'Bebas Neue', cursive;
@@ -22,22 +23,42 @@
 
 /* TELA LOGIN */
 
+#boxlog {
+    display: flex;
+
+}
+
+#box1 {
+    width: 450px;
+    height: 550px;
+    border: 3px solid;
+    background-color: var(--cor3);
+}
+#box2 {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 450px;
+    height: 550px;
+    border: 3px solid;
+    background-color: var(--cor0);
+}
+
 body {
     font-family: 'Maven Pro', sans-serif;
-    background-image: url(../assets/img/loginbg.png);
+    background-image: url(../assets/img/bg6.gif);
 }
 
 body, ul {
     margin: 0px;
-    padding: 100px;
-    background-repeat: no-repeat;
-
+    padding: 50px;
+    padding-left: 100px;
 }
 
 p {
     color: var(--cor5);
     margin: auto;
 }
+
 
 h1 {
     color: var(--cor5);
@@ -57,6 +78,7 @@ h1 {
 
 }
 
+
 #containermain {
     padding: 10px;
     min-width: 250px;
@@ -70,10 +92,11 @@ h1 {
 }
 
 #containersection {
-    padding: 10px;
+    /* padding: 10px; */
     min-width: 250px;
     max-width: 450px;
-    margin: auto;
+    /* margin: auto; */
+    z-index: 10;
 }
 
 #containersection > h1 {
@@ -111,7 +134,7 @@ input:hover {
 
 #btn-entrar:hover {
     color: var(--cor5);
-    background-color: var(--cor4);
+    background-color: var(--cor3);
 }
 
 
@@ -131,7 +154,15 @@ input:hover {
 
 #btn-cadastro:hover {
     color: var(--cor5);
-    background-color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    color: var(--cor1);
+    font-size: large;
+    text-shadow: #000000;
 }
 
 @media (max-width: 850px) {
@@ -164,6 +195,18 @@ input:hover {
     div {
         display: flex;
         align-items: flex-start;
+    }
+
+    #box1 {
+        width: 450px;
+        height: 550px;
+        border: 3px solid;
+        background-color: var(--cor3);
+    }
+    #box2 {
+        margin-top: 25px;
+        margin-left: 25px;
+
     }
 
     #container {
