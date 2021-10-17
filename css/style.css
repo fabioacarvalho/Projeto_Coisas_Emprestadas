@@ -31,9 +31,8 @@
 
 body {
     font-family: var(--fonte-padrao);
-    /* background-image: url(../assets/img/bg6.gif); */
-    background-image: url(../assets/img/bgbgbg.gif);
-    background-size: cover;
+
+    background-color: var(--cor1);
 }
 
 body, ul {
@@ -105,22 +104,8 @@ a:hover {
 #lista {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
     padding-top: -10px;
-}
-
-#listaEmprestimos {
-    font-size: 30px;
-    color: var(--cor5);
-    margin: 50px;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.227);
-
-    border-radius: 10px;
-    height: 60vh;
-    width: 90vw;
-    
 }
 
 .item-lista {
@@ -235,6 +220,7 @@ label {
     box-shadow: 3px 3px 3px 3px rgba(75, 75, 75, 0.385);
 }
 
+
 .qdCadastro {
     display: inline-block;
     justify-content: space-between;
@@ -278,6 +264,8 @@ section:hover > h1 {
 }
 
 
+
+
 /* ------------------------ FOOTER ------------------------ */
 
 
@@ -293,7 +281,7 @@ section:hover > h1 {
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: var(--cor0);
+        background-color: var(--cor7);
         transition: .6s; /* Part tempo animação */
         z-index: 1000; /* Garanti que ele fique por cima */        
         height: 0px;
@@ -326,11 +314,11 @@ section:hover > h1 {
         background: none;
         cursor: pointer;
         gap: .5rem;
-        color:var(--cor1);        
+        color:var(--cor7);        
     }
 
     #hamburguer {
-        border-top: 2px solidvar(--cor1);
+        border-top: 2px solidvar(--cor7);
         width: 20px;
     }
 
@@ -341,7 +329,7 @@ section:hover > h1 {
         display: block;
         width: 20px;
         height: 2px;
-        background-color:var(--cor1); /* Usa o cor do #hambuerguer */
+        background-color:var(--cor7); /* Usa o cor do #hambuerguer */
         margin-top: 5px;
         transition: .3s;
         position: relative;

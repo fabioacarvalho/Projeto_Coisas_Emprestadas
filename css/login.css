@@ -108,7 +108,7 @@ h1 {
 
 input {
     padding: 20px;
-    min-width: 30vw;
+    min-width: 20vw;
     border-radius: 15px;
     margin: 5px;
 }
@@ -119,6 +119,7 @@ input:hover {
 
 .campos {
     border: none;
+    max-width: 20vw;
 
 }
 

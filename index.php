@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coisas Emprestadas</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="./css/animacoes.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <div id="boxlog">
-        <div class="flip-2-hor-top-2" id="box1">
-            <div class="flip-2-hor-top-2" id="box2">
+        <div class="anamation2" id="box1">
+            <div class="anamation2" id="box2">
                 <div id="container">
                     <section id="containersection">
-                        <h1>Coisas Emprestadas</h1>
+                        <h1 class="anamation1">Coisas Emprestadas</h1>
                         <p id="click">Faça seu login abaixo! 
-                            <main id="container-login">
+                            <form id="container-login" method="POST" action="./config/auth.php">
                                 <div>
                                     <input type="email" name="email" id="email" class="campos" placeholder="Digite seu E-mail">
                                     <input type="password" name="psword" id="psword" class="campos" placeholder="Digite sua senha">
                                 </div>
                                 <div id="container-btn">
+                                    <p name="dados_invalidos"></p>
                                     <input type="submit" value="Entrar" id="btn-entrar">
                                     <input type="submit" value="Cadastrar" id="btn-cadastro">
                                 </div>
-                            </main>
+                            </form>
                         </p>
                     </section>
                 </div>
@@ -33,6 +36,7 @@
         </div>
     </div>
     <footer><strong>Desenvolvido por Fábio Carvalho</strong></footer>
+    
     
 </body>
 </html>
