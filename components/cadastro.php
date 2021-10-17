@@ -12,15 +12,15 @@
      <section class="containerbody">
          <!-- Cabeçalho -->
          <header id="header">
-            <a id="logo" href="/index.html">Coisas Emprestadas</a>
+            <a id="logo" href="/index.php">Coisas Emprestadas</a>
             <nav id="nav">
                 <!-- Menu Haburguer -->
                 <button id="btn-mobile" aria-label="Abril Menu" aria-haspopup="true" aria-controls="menu">Menu
                     <span id="hamburguer" aria-expanded="false"></span>
                 </button>
                 <ul id="menu" role="menu">
-                    <li><a href="/components/cadastro.html"><strong>Cadastro</strong></a></li>
-                    <li><a href="/components/produtos.html">Produtos</a></li>
+                    <li><a href="/components/cadastro.php"><strong>Cadastro</strong></a></li>
+                    <li><a href="/components/produtos.php">Produtos</a></li>
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Adminstrativo</a></li>
                 </ul>
@@ -28,7 +28,7 @@
              </header>
 
             <section id="quadro">
-                <a href="/components/cadastroProdutos.html">
+                <a href="/components/cadastroProdutos.php">
                     <section  class="qdCadastro">
                         <h1>PRODUTOS</h1>
                         <div>
@@ -36,7 +36,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="/components/cadastroUsuario.html">
+                <a href="/components/cadastroUsuario.php">
                     <section  class="qdCadastro">
                         <h1>USUÁRIOS</h1>
                         <div>

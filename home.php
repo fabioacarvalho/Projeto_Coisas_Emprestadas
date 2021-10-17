@@ -14,7 +14,7 @@
         <!-- Cabeçalho -->
         <header id="header">
             
-            <a id="logo" href="#">Coisas Emprestadas</a>
+            <a id="logo" href="/index.php">Coisas Emprestadas</a>
             
             <nav id="nav">
                 <!-- Menu Haburguer -->
@@ -22,8 +22,8 @@
                     <span id="hamburguer" aria-expanded="false"></span>
                 </button>
                 <ul id="menu" role="menu">
-                    <li><a href="/components/cadastro.html">Cadastro</a></li>
-                    <li><a href="/components/produtos.html">Produtos</a></li>
+                    <li><a href="/components/cadastro.php">Cadastro</a></li>
+                    <li><a href="/components/produtos.php">Produtos</a></li>
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Adminstrativo</a></li>
                 </ul>
@@ -33,7 +33,7 @@
         <section id="lista">
             <p id="titulo-lista">LISTA DE EMPRESTIMOS</p>
             <section class="item-lista">
-                <p class="titulo-produto-lista">PRODUTO 01</p>
+                <p class="titulo-produto-lista" name="produto">PRODUTO 01</p>
                 <div >
                     <p>Nome: Fulano</p>
                     <p>Data Devolução: 25/12/12</p>
