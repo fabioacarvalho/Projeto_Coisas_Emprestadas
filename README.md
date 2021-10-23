@@ -3,7 +3,7 @@ Trabalho desenvolvido para a disciplina de Fundamento da Programação Web, util
 
 # Login
 
-<img src="assets/img/home.png">
+<img src="assets/img/home.PNG">
 <br>
 
 
