@@ -20,12 +20,12 @@ Trabalho desenvolvido para a disciplina de Fundamento da Programação Web, util
 
 # Cadastro
 
-<img src="/assets/img/cadastro.PNG">
+<img src="/assets/img/cadastros.PNG">
 
 <br>
 
 # Cadastro Produto
 
-<img src="/assets/img/cadastroproduto.PNG">
+<img src="/assets/img/cadastroprodutos.PNG">
 
 <br>
