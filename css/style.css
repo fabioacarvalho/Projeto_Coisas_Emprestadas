@@ -111,9 +111,10 @@ a:hover {
 .item-lista {
     display: inline-block;
     justify-content: space-between;
+    min-width: 130px;
     width: 20vw;
     height: 30vh;
-    min-height: 120px;
+    min-height: 190px;
     padding: 20px;
     margin: auto;
     background-color: var(--cor7);  
@@ -290,6 +291,10 @@ section:hover > h1 {
 
     }
 
+    #user {
+        display: none;
+    }
+
     /* Animação */
 
     #nav.active #menu {
@@ -357,7 +362,6 @@ section:hover > h1 {
 
 
     #listaEmprestimos {
-
         height: 60vh;
         width: 75vw;
         
@@ -376,7 +380,11 @@ section:hover > h1 {
         margin: auto;
     }
     
-    
+    /* --------------- LISTA EMPRESTIMO HOME --------------- */
+
+    .item-lista {
+        width: 80vw;
+    }
 
 
 }

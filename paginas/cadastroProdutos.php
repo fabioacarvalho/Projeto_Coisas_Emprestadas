@@ -27,8 +27,8 @@
                     <li><a href="./cadastro.php"><strong>Cadastro</strong></a></li>
                     <li><a href="./produtos.php">Produtos</a></li>
                     <li><a href="./dashboard.php">Dashboard</a></li>
-                    <li><a href="#">Adminstrativo</a></li>
-                    <li><a href="./config/logout.php">Sair</a></li>
+                    <li><a href="./adm.php">Adminstrativo</a></li>
+                    <li><a href="../config/logout.php">Sair</a></li>
                 </ul>
             </nav>
              </header>
@@ -51,6 +51,8 @@
                 </form> 
             </section>
      </section>
+
+     <script src="../js/navbar-js.js"></script>
 
 </body>
 </html>

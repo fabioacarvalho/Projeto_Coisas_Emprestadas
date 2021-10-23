@@ -33,7 +33,7 @@
                     <li><a href="./cadastro.php">Cadastro</a></li>
                     <li><a href="./produtos.php">Produtos</a></li>
                     <li><a href="./dashboard.php"><strong>Dashboard</strong></a></li>
-                    <li><a href="#">Adminstrativo</a></li>
+                    <li><a href="./adm.php">Adminstrativo</a></li>
                     <li><a href="../config/logout.php">Sair</a></li>
                 </ul>
             </nav>
@@ -58,7 +58,7 @@
 
     </section>
 
-    <script src="js/navbar-js.js"></script>
+    <script src="../js/navbar-js.js"></script>
 
 </body>
 </html>

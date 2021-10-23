@@ -22,7 +22,7 @@
         <header id="header">
             
             <a id="logo" href="./home.php">Coisas Emprestadas</a>
-            <p><strong>Bem Vindo: </strong><?php echo $_SESSION['nome']  ?></p>
+            <p id="user"><strong>Bem Vindo: </strong><?php echo $_SESSION['nome']  ?></p>
             <nav id="nav">
                 <!-- Menu Haburguer -->
                 <button id="btn-mobile" aria-label="Abril Menu" aria-haspopup="true" aria-controls="menu">Menu
@@ -32,7 +32,7 @@
                     <li><a href="./paginas/cadastro.php">Cadastro</a></li>
                     <li><a href="./paginas/produtos.php">Produtos</a></li>
                     <li><a href="./paginas/dashboard.php">Dashboard</a></li>
-                    <li><a href="#">Adminstrativo</a></li>
+                    <li><a href="./paginas/adm.php">Adminstrativo</a></li>
                     <li><a href="./config/logout.php">Sair</a></li>
                 </ul>
             </nav>
@@ -43,9 +43,16 @@
 <?php
     include "./config/conexao.php";
 
-    $sql = "SELECT nomeProduto, categoria, nomeUsuario, dataDev FROM produtos INNER JOIN emprestimos INNER JOIN usuarios WHERE emprestimos.idUsuario = usuarios.idUsuario and emprestimos.idProduto = produtos.idProduto ORDER BY emprestimos.idRegistro DESC";
+    $user = $_SESSION['id'];
 
-    $sql_query = $mysqli->query($sql) or die("ERRO ao consultar " . $mysqli->error);
+    
+    $sql1 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro FROM produtos INNER JOIN emprestimos INNER JOIN usuarios WHERE emprestimos.idUsuario = usuarios.idUsuario and emprestimos.idProduto = produtos.idProduto ORDER BY emprestimos.idRegistro DESC";
+    
+    $sql2 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro FROM produtos INNER JOIN emprestimos INNER JOIN usuarios WHERE emprestimos.idUsuario = usuarios.idUsuario and emprestimos.idProduto = produtos.idProduto and emprestimos.idUsuario = $user ORDER BY emprestimos.idRegistro DESC";
+    
+    $sql_query = $mysqli->query($user == 1 ? $sql1 : $sql2) or die("ERRO ao consultar " . $mysqli->error);
+
+
     
     if($sql_query->num_rows == 0) {
         echo "Nenhum resultado encontrado.";
@@ -59,7 +66,10 @@
                     <div >
                         <p>Nome: <?php echo$dados['nomeUsuario'] ?></p>
                         <p>Devolução: <?php echo$dados['dataDev'] ?></p>
-                        <button>Devolver</button>
+                        <form action="./config/devolucao.php" method="post">
+                            <input type="hidden" name="idRegistro" value="<?php echo$dados['idRegistro'] ?>">
+                            <input type="submit" value="Devolver">
+                        </form>
                     </div>
                 </section>
             
