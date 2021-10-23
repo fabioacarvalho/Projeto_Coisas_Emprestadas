@@ -9,23 +9,23 @@ Trabalho desenvolvido para a disciplina de Fundamento da Programação Web, util
 
 # Início
 
-<img src="/assets/img/list.png">
+<img src="/assets/img/list.PNG">
 <br>
 
 # Produtos
 
-<img src="/assets/img/produtos.png">
+<img src="/assets/img/produtos.PNG">
 
 <br>
 
 # Cadastro
 
-<img src="/assets/img/cadastro.png">
+<img src="/assets/img/cadastro.PNG">
 
 <br>
 
 # Cadastro Produto
 
-<img src="/assets/img/cadastroproduto.png">
+<img src="/assets/img/cadastroproduto.PNG">
 
 <br>
