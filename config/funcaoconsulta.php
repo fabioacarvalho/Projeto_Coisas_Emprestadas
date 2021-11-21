@@ -4,7 +4,11 @@
 
     $nome = $_POST['nomeProduto'];
 
-    $date = "20/08/08";
+    $cincoDias = new DateInterval('P5Y0M0D'); // Intervalo de 5 dias
+    $hoje = new DateTime();
+    $dataDevolucao = $hoje->add($cincoDias);
+
+    $date = $dataDevolucao->format('d/m/y');
     $user = $_SESSION['id'];
 
     $sql = "SELECT * FROM produtos WHERE nomeProduto = '$nome'";
